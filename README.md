@@ -2,7 +2,7 @@
 
 4-Wire PWM fan control using the Arduino ATmega328P (Uno, etc.) and ATtiny85.
 
-Forked from Marcelo Aquino's 4-Wire-FAN-Arduino repository which serves as the basis for all of the programs I'll be writing.
+Forked from [Marcelo Aquino's 4-Wire-FAN-Arduino](https://github.com/marceloaqno/4-Wire-FAN-Arduino) repository which serves as the basis for this project.
 
 This is still a work in process.
 
@@ -19,3 +19,4 @@ This project is shared under a GNU General Public License v2.0 - see the [LICENS
 ## More information
 
 * [Intel 4 Wire PWM Controlled Fan Spec v1.3](http://www.glkinst.com/cables/cable_pics/4_Wire_PWM_Spec.pdf)
+
