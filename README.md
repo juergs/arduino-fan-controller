@@ -1,11 +1,21 @@
-4-Wire-FAN-Arduino
-==================
+# arduino-fan-controller
 
-4-Wire FAN control with Arduino ATmega328P/ATtiny85
+4-Wire PWM fan control using the Arduino ATmega328P (Uno, etc.) and ATtiny85.
 
-You can choose duty cycle by setting OCR0B where max value is 0CR0A.
+Forked from Marcelo Aquino's 4-Wire-FAN-Arduino repository which serves as the basis for all of the programs I'll be writing.
 
-PWM (Fast PWM Mode) generates one 500nS pulse even when duty cycle is 0.
+This is still a work in process.
 
-With ATtiny85 you can choose PWM - Phase Correct which generates no pulse when 0.
+## Getting started
 
+Program descriptions:
+
+* attiny-demo - ATTiny85 program that continuously speeds up and slows down the fan in an infinite loop
+
+## License
+
+This project is shared under a GNU General Public License v2.0 - see the [LICENSE](LICENSE) file for details
+
+## More information
+
+* [Intel 4 Wire PWM Controlled Fan Spec v1.3](http://www.glkinst.com/cables/cable_pics/4_Wire_PWM_Spec.pdf)
