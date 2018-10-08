@@ -10,7 +10,9 @@ This is still a work in process.
 
 Program descriptions:
 
-* attiny-demo - ATTiny85 program that continuously speeds up and slows down the fan in an infinite loop
+* atmega328p-pot - Potentiometer controlled speed using ATMega328P (Uno)
+* attiny-demo - Raise/Lower fan speed in an infinite loop using ATtiny85
+* attiny-pot - Potentiometer controlled speed using ATtiny85
 
 ## License
 
