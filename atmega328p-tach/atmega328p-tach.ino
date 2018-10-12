@@ -30,12 +30,12 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-unsigned long serialMonLastUpdateMillis = 0;
+unsigned long serialLastUpdateMillis = 0;
 unsigned long calcRPMLastMillis = 0;
-unsigned long interval = 1000;
 volatile unsigned long tachPulseCount = 0;
 
-const int tachPin = 2;
+const unsigned long SERIAL_UPDATE_INTERVAL = 1000;
+const int TACH_PIN = 2;
 
 
 void CountTachPulse()
@@ -48,8 +48,8 @@ void CountTachPulse()
 void setup()
 {
   Serial.begin(9600);
-  pinMode(tachPin, INPUT_PULLUP);
-  attachInterrupt(digitalPinToInterrupt(tachPin), CountTachPulse, FALLING);
+  pinMode(TACH_PIN, INPUT_PULLUP);
+  attachInterrupt(digitalPinToInterrupt(TACH_PIN), CountTachPulse, FALLING);
 }
 
 
@@ -75,10 +75,10 @@ unsigned long CalculateRPM()
 void loop()
 {
   // Update serial monitor every second.
-  if (millis() - serialMonLastUpdateMillis > interval)
+  if (millis() - serialLastUpdateMillis > SERIAL_UPDATE_INTERVAL)
   {
     Serial.print("Fan RPM = ");
     Serial.println(CalculateRPM());
-    serialMonLastUpdateMillis = millis();  
+    serialLastUpdateMillis = millis();  
   }
 }
