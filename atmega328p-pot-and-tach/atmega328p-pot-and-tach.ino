@@ -1,8 +1,8 @@
 /* ATMega328P potentiometer controlled fan speed and tachometer
  * 
  * This program controls the fan speed using a potentiometer input. It also
- * reads the RPM using the tach signal from the fan, and outputs the data
- * to an LCD screen over i2c.
+ * reads the tachometer pin of the fan and calculates the RPM, which is
+ * output to the serial monitor every second.
  * 
  * It works with the Arduino Uno and other ATMega328P based Arduinos.
  * 
