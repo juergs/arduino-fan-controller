@@ -11,6 +11,7 @@ This is still a work in process.
 Program descriptions:
 
 * atmega328p-pot - Potentiometer controlled speed using ATMega328P (Uno)
+* atmega328p-tach - Calculate fan RPM from tachometer pin using ATMega328P (Uno)
 * attiny-demo - Raise/Lower fan speed in an infinite loop using ATtiny85
 * attiny-pot - Potentiometer controlled speed using ATtiny85
 
